@@ -21,8 +21,8 @@
  * MicroProfile Fault Tolerance API.
  */
 module org.eclipse.microprofile.faulttolerance {
-    requires transitive jakarta.cdi;
-    requires transitive jakarta.interceptor;
+    requires static transitive jakarta.cdi;
+    requires static transitive jakarta.interceptor;
 
     exports org.eclipse.microprofile.faulttolerance;
     exports org.eclipse.microprofile.faulttolerance.exceptions;
