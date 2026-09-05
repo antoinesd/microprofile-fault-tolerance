@@ -19,12 +19,6 @@
 
 /**
  * MicroProfile Fault Tolerance API.
- *
- * <p>
- * The fault tolerance annotations ({@code @Retry}, {@code @Timeout}, {@code @Fallback}, ...) are
- * meta-annotated with {@code jakarta.interceptor.InterceptorBinding}, and most of their members are
- * {@code jakarta.enterprise.util.Nonbinding}. Those modules are required transitively so that a CDI
- * container can resolve the bindings from any module reading this API on the module path.
  */
 module org.eclipse.microprofile.faulttolerance {
     requires transitive jakarta.cdi;
